@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderMain = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,6 +29,7 @@ export const Button = styled.div`
   width: 60px;
   margin: auto;
   height: 60px;
+
   border-bottom-right-radius: var(--radiusfull);
   border-bottom-left-radius: var(--radiusfull);
   display: flex;
@@ -40,9 +41,9 @@ export const Button = styled.div`
   }
   p {
     position: absolute;
-    bottom: -5px;
-    left: 40px;
-    color: #2d2d2d;
+    bottom: -30px;
+    left: 30px;
+    color: var(--brand-color);
     transform: rotate(317deg);
     visibility: visible;
     opacity: 1;
@@ -53,7 +54,8 @@ export const Button = styled.div`
 export const NavMenu = styled.ul`
   margin: 10px 0;
   padding: 0;
-  overflow: hidden;
+  max-height: 60vh;
+
   li {
     list-style: none;
     a {

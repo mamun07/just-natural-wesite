@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { EntryHome, GreenBg } from "./style";
+import HomeSlider from "../sections/HomeSlider";
 
 export default function Home() {
   return (
@@ -9,9 +11,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Welcome to Just Natural Home Page</h1>
-      </main>
+      <EntryHome>
+        <HomeSlider />
+        <GreenBg>
+          <h2>Welcome Section</h2>
+        </GreenBg>
+        <h2>Portfolio Section</h2>
+        <h2>Social Follow Section</h2>
+        <h2>Contact Area</h2>
+      </EntryHome>
     </>
   );
 }

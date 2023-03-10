@@ -23,5 +23,12 @@ body {
   color: var(--primary-color);
   scroll-behavior: smooth;
   position: relative;
+  font-size: 14px;
   font-family: "Patrick Hand", cursive;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 18px;
 }

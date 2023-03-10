@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div className="jn-root">
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </div>
   );
