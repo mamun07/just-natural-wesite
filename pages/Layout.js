@@ -1,12 +1,14 @@
 import React from "react";
+import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <h3>Header</h3>
+    <div className="jn-root">
+      <Header />
       {children}
-      <h3>Footer</h3>
-    </>
+      <Footer />
+    </div>
   );
 };
 

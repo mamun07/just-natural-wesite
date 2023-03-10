@@ -1,10 +1,13 @@
+import Image from "next/image";
 import React from "react";
+import Logo from "../../public/logo.png";
+import { HeaderBg } from "../style";
 
 const Header = () => {
   return (
-    <div className="text">
-      <h2>Header Nav bar</h2>
-    </div>
+    <HeaderBg>
+      <Image src={Logo} width={120} height={80} />
+    </HeaderBg>
   );
 };
 

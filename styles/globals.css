@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --primary-color: #2d2d2d;
   --secondary-color: #ffffff;
@@ -20,4 +16,5 @@ body {
   background: var(--secondary-color);
   color: var(--primary-color);
   scroll-behavior: smooth;
+  position: relative;
 }
