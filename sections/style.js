@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
-export const HeaderBg = styled.div`
+export const HeaderMain = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+`;
+export const NavSlide = styled.div`
   background: var(--brand-color);
   color: white;
   text-align: center;
-  position: relative;
   padding: var(--py15);
 `;
 export const Button = styled.div`
@@ -24,6 +35,9 @@ export const Button = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  svg {
+    font-size: 28px;
+  }
   p {
     position: absolute;
     bottom: -5px;
