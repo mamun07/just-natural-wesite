@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "../public/w-logo.png";
-import Pata from "../public/w-pata.png";
+import Logo from "../../public/w-logo.png";
+import Pata from "../../public/w-pata.png";
 import { HeaderMain, NavSlide, Button, NavMenu } from "./style";
 import { CgClose } from "react-icons/cg";
 

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { EntryHome, GreenBg } from "./style";
-import HomeSlider from "../sections/HomeSlider";
+import HomeSlider from "../sections/Slider";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -14,11 +15,23 @@ export default function Home() {
       <EntryHome>
         <HomeSlider />
         <GreenBg>
-          <h2>Welcome Section</h2>
+          <Container>
+            <Row>
+              <Col>
+                <h2>Welcome Section</h2>
+              </Col>
+            </Row>
+          </Container>
         </GreenBg>
-        <h2>Portfolio Section</h2>
-        <h2>Social Follow Section</h2>
-        <h2>Contact Area</h2>
+        <Container>
+          <Row>
+            <Col>
+              <h2>Portfolio Section</h2>
+              <h2>Social Follow Section</h2>
+              <h2>Contact Area</h2>
+            </Col>
+          </Row>
+        </Container>
       </EntryHome>
     </>
   );
