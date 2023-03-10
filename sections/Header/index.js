@@ -27,27 +27,59 @@ const Header = () => {
       <NavSlide className={showMenu ? "show" : "hide"}>
         <NavMenu>
           <li>
-            <Link href={"/about-us"}>About us</Link>
+            <Link href={"/about-us"}>A glimpse on us</Link>
             <ul>
               <li>
-                <Link href={"/about-us"}>Sub Menu</Link>
+                <Link href={"/about-us"}>Our Story</Link>
               </li>
               <li>
-                <Link href={"/about-us"}>Sub Menu 1</Link>
+                <Link href={"/about-us"}>Our Journey</Link>
               </li>
               <li>
-                <Link href={"/about-us"}>Sub Menu 2</Link>
+                <Link href={"/about-us"}>Our Team</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Our Certification</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Our packaging</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Our Factory</Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link href={"/about-us"}>About us</Link>
+            <Link href={"/about-us"}>Things we do</Link>
+            <ul>
+              <li>
+                <Link href={"/about-us"}>Snacks</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Honey</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Instant</Link>
+              </li>
+              <li>
+                <Link href={"/about-us"}>Drinks</Link>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link href={"/about-us"}>About us</Link>
+            <Link href={"/about-us"}>Things we do for the society</Link>
           </li>
           <li>
-            <Link href={"/about-us"}>About us</Link>
+            <Link href={"/about-us"}>What people think of us</Link>
+          </li>
+          <li>
+            <Link href={"/about-us"}>Wanna work with us?</Link>
+          </li>
+          <li>
+            <Link href={"/about-us"}>Get in Touch</Link>
+          </li>
+          <li>
+            <Link href={"/about-us"}>Blog</Link>
           </li>
         </NavMenu>
       </NavSlide>
