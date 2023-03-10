@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
 :root {
   --primary-color: #2d2d2d;
   --secondary-color: #ffffff;
   --brand-color: #00963e;
   --brand2-color: #32d600;
-  --border-radius: 5px;
+  --radiusfull: 100%;
+
+  /* space */
+  --py15: 15px 0;
+  --px15: 15px 0;
 }
 
 * {
@@ -17,4 +23,5 @@ body {
   color: var(--primary-color);
   scroll-behavior: smooth;
   position: relative;
+  font-family: "Patrick Hand", cursive;
 }
