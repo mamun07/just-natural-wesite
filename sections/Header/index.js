@@ -26,61 +26,22 @@ const Header = () => {
       </Button>
       <NavSlide className={showMenu ? "show" : "hide"}>
         <NavMenu>
-          <li>
-            <Link href={"/about-us"}>A glimpse on us</Link>
-            <ul>
-              <li>
-                <Link href={"/about-us"}>Our Story</Link>
+          {NavData?.map((menu, i) => {
+            return (
+              <li key={i}>
+                <Link href={menu.link}>{menu.title}</Link>
+                <ul>
+                  {menu.children?.map((submenu, i) => {
+                    return (
+                      <li key={i}>
+                        <Link href={submenu.link}>{submenu.title}</Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </li>
-              <li>
-                <Link href={"/about-us"}>Our Journey</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Our Team</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Our Certification</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Our packaging</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Our Factory</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link href={"/about-us"}>Things we do</Link>
-            <ul>
-              <li>
-                <Link href={"/about-us"}>Snacks</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Honey</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Instant</Link>
-              </li>
-              <li>
-                <Link href={"/about-us"}>Drinks</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link href={"/about-us"}>Things we do for the society</Link>
-          </li>
-          <li>
-            <Link href={"/about-us"}>What people think of us</Link>
-          </li>
-          <li>
-            <Link href={"/about-us"}>Wanna work with us?</Link>
-          </li>
-          <li>
-            <Link href={"/about-us"}>Get in Touch</Link>
-          </li>
-          <li>
-            <Link href={"/about-us"}>Blog</Link>
-          </li>
+            );
+          })}
         </NavMenu>
       </NavSlide>
     </HeaderMain>
@@ -88,3 +49,48 @@ const Header = () => {
 };
 
 export default Header;
+
+const NavData = [
+  {
+    title: "A glimpse on us",
+    link: "/",
+    children: [
+      { title: "Our Story", link: "/" },
+      { title: "Our Journey", link: "/" },
+      { title: "Our Team", link: "/" },
+      { title: "Our Certification", link: "/" },
+      { title: "Our packaging", link: "/" },
+      { title: "Our Factory", link: "/" },
+    ],
+  },
+  {
+    title: "Things we do",
+    link: "/",
+    children: [
+      { title: "Snacks", link: "/" },
+      { title: "Honey", link: "/" },
+      { title: "Instant", link: "/" },
+      { title: "Drinks", link: "/" },
+    ],
+  },
+  {
+    title: "Things we do for the society",
+    link: "/",
+  },
+  {
+    title: "What people think of us",
+    link: "/",
+  },
+  {
+    title: "Wanna work with us",
+    link: "/",
+  },
+  {
+    title: "Get in Touch",
+    link: "/",
+  },
+  {
+    title: "Blog",
+    link: "/",
+  },
+];
