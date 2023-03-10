@@ -25,6 +25,7 @@ const Header = () => {
         <p>menu</p>
       </Button>
       <NavSlide className={showMenu ? "show" : "hide"}>
+        <Image src={Logo} width={150} height={70} />
         <NavMenu>
           {NavData?.map((menu, i) => {
             return (
