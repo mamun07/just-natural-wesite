@@ -54,7 +54,7 @@ const Footer = () => {
       </FooterTop>
       <FooterMid>
         <Container fluid>
-          <Row justify-content-center>
+          <Row>
             <Col xs={12} md={5}>
               <MiddleMenu>
                 <ul>

@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import { Container, Row, Col } from "react-bootstrap";
 
+import { SliderContent } from "./style";
+
 export default function homeSlider() {
   return (
     <>
@@ -23,7 +25,7 @@ export default function homeSlider() {
         {[1, 2, 3, 4, 5, 6].map((i) => {
           return (
             <SwiperSlide key={i}>
-              <div className="slider_content">
+              <SliderContent>
                 <img src="./slider/1.jpg" />
                 <Container>
                   <Row>
@@ -36,7 +38,7 @@ export default function homeSlider() {
                     </Col>
                   </Row>
                 </Container>
-              </div>
+              </SliderContent>
             </SwiperSlide>
           );
         })}

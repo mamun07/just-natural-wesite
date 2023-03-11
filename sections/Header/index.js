@@ -25,7 +25,9 @@ const Header = () => {
         <p>menu</p>
       </Button>
       <NavSlide className={showMenu ? "show" : "hide"}>
-        <Image src={Logo} width={150} height={70} />
+        <Link href={"/"}>
+          <Image src={Logo} width={150} height={70} />
+        </Link>
         <NavMenu>
           {NavData?.map((menu, i) => {
             return (
@@ -88,7 +90,7 @@ const NavData = [
   },
   {
     title: "Get in Touch",
-    link: "/",
+    link: "/about-us",
   },
   {
     title: "Blog",
