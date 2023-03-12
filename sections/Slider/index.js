@@ -19,25 +19,19 @@ export default function homeSlider() {
           clickable: true,
         }}
         navigation={true}
+        loop
         modules={[Autoplay, Pagination]}
         className="home-slider"
       >
-        {[1, 2, 3, 4, 5, 6].map((i) => {
+        {sliderData.map((banner, i) => {
           return (
             <SwiperSlide key={i}>
               <SliderContent>
-                <img src="./slider/1.jpg" />
-                <Container>
-                  <Row>
-                    <Col>
-                      <p>
-                        Welcome to the colorful world of Just Natural. We are
-                        one of the top ranked brand for wellness, beauty and
-                        personal care in Bangladesh.
-                      </p>
-                    </Col>
-                  </Row>
-                </Container>
+                <img src={banner.link} />
+                <div className="banner_content">
+                  <h2>{banner.title}</h2>
+                  <p>{banner.details}</p>
+                </div>
               </SliderContent>
             </SwiperSlide>
           );
@@ -46,3 +40,18 @@ export default function homeSlider() {
     </>
   );
 }
+
+const sliderData = [
+  {
+    link: "./slider/3.jpg",
+    title: "Welcome to the colorful",
+    details:
+      "Welcome to the colorful world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
+  },
+  {
+    link: "./slider/2.jpg",
+    title: "Welcome to the colorful",
+    details:
+      "Welcome to the colorful world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
+  },
+];
