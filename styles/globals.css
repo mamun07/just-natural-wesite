@@ -2,6 +2,7 @@
   font-family: "Innocent Just";
   src: url("../assets/Innocent.ttf");
 }
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 :root {
   --primary-color: #2d2d2d;
   --secondary-color: #ffffff;
@@ -16,8 +17,9 @@
   --px15: 15px 0;
   --p40: 40px;
   --p100: 100px;
-  --primary-font: "Innocent Just", sans-serif;
-  --secondary-font: "Innocent Just", sans-serif;
+  --primary-font: "Kalam", cursive;
+  --secondary-font: "Kalam", cursive;
+  /* --secondary-font: "Innocent Just", sans-serif; */
 }
 
 * {
