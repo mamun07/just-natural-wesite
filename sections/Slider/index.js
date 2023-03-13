@@ -1,10 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Autoplay, Pagination } from "swiper";
-import { Container, Row, Col } from "react-bootstrap";
-
 import { SliderContent } from "./style";
+import Image from "next/image";
+import ImagePath from "@/pages/components/ImagePath";
+import Link from "next/link";
 
 export default function homeSlider() {
   return (
@@ -12,9 +12,6 @@ export default function homeSlider() {
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-        }}
         pagination={{
           clickable: true,
         }}
@@ -27,10 +24,17 @@ export default function homeSlider() {
           return (
             <SwiperSlide key={i}>
               <SliderContent>
-                <img src={banner.link} />
+                <Image
+                  loader={ImagePath}
+                  src={banner.link}
+                  alt={banner.title}
+                  width={1920}
+                  height={1000}
+                />
                 <div className="banner_content">
                   <h2>{banner.title}</h2>
                   <p>{banner.details}</p>
+                  <Link href={banner.btn_link}>{banner.btn_label}</Link>
                 </div>
               </SliderContent>
             </SwiperSlide>
@@ -43,15 +47,19 @@ export default function homeSlider() {
 
 const sliderData = [
   {
-    link: "./slider/3.jpg",
-    title: "Welcome to the colorful",
+    link: "./slider/web_banner_1.jpg",
+    title: "Welcome to the Just Natural",
+    btn_label: "Show More",
+    btn_link: "/about-us",
     details:
-      "Welcome to the colorful world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
+      "Welcome to the Just Natural world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
   },
   {
-    link: "./slider/2.jpg",
-    title: "Welcome to the colorful",
+    link: "./slider/web_banner_2.jpg",
+    title: "Just Natural For You",
+    btn_label: "Show More",
+    btn_link: "/about-us",
     details:
-      "Welcome to the colorful world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
+      "it's your world of Just Natural. We areone of the top ranked brand for wellness, beauty and personal care in Bangladesh",
   },
 ];

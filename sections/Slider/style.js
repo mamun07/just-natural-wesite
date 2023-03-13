@@ -9,6 +9,8 @@ export const SliderContent = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(50%, 50%);
+    width: 40%;
+    transform: translate(75%, 300%);
+    text-align: center;
   }
 `;
