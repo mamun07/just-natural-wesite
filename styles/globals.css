@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-
+@font-face {
+  font-family: "Innocent Just";
+  src: url("../assets/Innocent.ttf");
+}
 :root {
   --primary-color: #2d2d2d;
   --secondary-color: #ffffff;
@@ -14,8 +16,8 @@
   --px15: 15px 0;
   --p40: 40px;
   --p100: 100px;
-  --primary-font: "Patrick Hand", cursive;
-  --secondary-font: "Patrick Hand", cursive;
+  --primary-font: "Innocent Just", sans-serif;
+  --secondary-font: "Innocent Just", sans-serif;
 }
 
 * {
