@@ -11,7 +11,6 @@ export default function homeSlider() {
     <>
       <Swiper
         spaceBetween={0}
-        // autoplay={true}
         centeredSlides={true}
         pagination={{
           clickable: true,

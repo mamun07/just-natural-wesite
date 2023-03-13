@@ -21,8 +21,6 @@ const CustomButton = styled.div`
     border-radius: 25px;
     color: var(--primary-color);
     padding: 10px 25px;
-    font-size: 16px;
-    line-height: 16px;
     text-decoration: none;
     position: relative;
     ::before {

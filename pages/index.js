@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { EntryHome, GreenBg } from "./style";
 import HomeSlider from "../sections/Slider";
+import HomeWelcome from "../sections/HomeWelcome";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function Home({ welcome_title }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -14,15 +15,7 @@ export default function Home({ welcome_title }) {
       </Head>
       <EntryHome>
         <HomeSlider />
-        <GreenBg>
-          <Container>
-            <Row>
-              <Col>
-                <h2>{welcome_title}</h2>
-              </Col>
-            </Row>
-          </Container>
-        </GreenBg>
+        <HomeWelcome />
         <Container>
           <Row>
             <Col>
@@ -35,12 +28,4 @@ export default function Home({ welcome_title }) {
       </EntryHome>
     </>
   );
-}
-
-export function getServerSideProps() {
-  return {
-    props: {
-      welcome_title: "Welcome Section",
-    },
-  };
 }
