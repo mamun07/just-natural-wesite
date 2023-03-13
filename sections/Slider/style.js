@@ -10,7 +10,10 @@ export const SliderContent = styled.div`
     top: 0;
     left: 0;
     width: 40%;
-    transform: translate(75%, 300%);
+    transform: translate(75%, 150%);
     text-align: center;
+  }
+  p {
+    margin-bottom: 90px;
   }
 `;
